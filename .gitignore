@@ -1,0 +1,5 @@
+.idea/
+twitter-backend/target/
+twitter-client/node_modules/
+twitter-client/build/
+twitter-client/dist/

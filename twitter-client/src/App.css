@@ -1,0 +1,337 @@
+.twitter-app {
+  min-height: 100vh;
+}
+
+.app-header {
+  background: #fff;
+  border-bottom: 1px solid #e1e8ed;
+}
+
+.header-container,
+.main-content {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.header-container,
+.logo-section,
+.header-actions,
+.user-profile,
+.composer-footer,
+.tweet-header,
+.tweet-meta,
+.search-form,
+.comment-input-box {
+  display: flex;
+  align-items: center;
+}
+
+.header-container {
+  min-height: 68px;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.logo-section {
+  gap: 12px;
+  color: #1d9bf0;
+}
+
+.logo-section h1 {
+  margin: 0;
+  font-size: 21px;
+}
+
+.twitter-logo {
+  width: 27px;
+  fill: currentColor;
+}
+
+.header-actions,
+.user-profile {
+  gap: 12px;
+}
+
+.main-content {
+  padding: 28px 0;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 330px;
+  gap: 24px;
+  align-items: start;
+}
+
+.feed-column,
+.sidebar-column {
+  min-width: 0;
+}
+
+.tweet-composer,
+.card,
+.tweet-card,
+.feed-header,
+.empty-box,
+.error-box,
+.loading {
+  margin-bottom: 16px;
+  padding: 18px;
+  background: #fff;
+  border: 1px solid #e1e8ed;
+  border-radius: 12px;
+}
+
+.tweet-composer {
+  display: flex;
+  gap: 12px;
+}
+
+.composer-avatar,
+.avatar-circle {
+  display: grid;
+  flex: 0 0 42px;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 50%;
+  background: #d9efff;
+  color: #0876bd;
+  font-weight: 700;
+}
+
+.composer-form,
+.tweet-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.composer-form textarea,
+.form-stack input,
+.search-form input,
+.active-user-setting input,
+.comment-input-box input {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #ccd6dd;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.composer-form textarea {
+  resize: vertical;
+}
+
+.composer-footer {
+  justify-content: flex-end;
+  gap: 14px;
+  padding-top: 10px;
+}
+
+.char-count,
+.tweet-date,
+.tweet-id,
+.endpoint-hint {
+  color: #657786;
+  font-size: 13px;
+}
+
+.feed-header {
+  margin-bottom: 0;
+  border-radius: 12px 12px 0 0;
+}
+
+.feed-header h2,
+.card h3 {
+  margin: 0;
+  font-size: 17px;
+}
+
+.tweet-card {
+  display: flex;
+  gap: 12px;
+  margin: 0;
+  border-radius: 0;
+  border-top: 0;
+}
+
+.tweet-card:last-child {
+  border-radius: 0 0 12px 12px;
+}
+
+.tweet-header {
+  gap: 10px;
+}
+
+.tweet-author {
+  font-weight: 700;
+}
+
+.tweet-date {
+  margin-right: auto;
+}
+
+.tweet-text {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.tweet-meta {
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.meta-action-btn,
+.btn-cors-info,
+.btn-logout,
+.btn-delete-tweet,
+.tab-btn {
+  padding: 7px 10px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: #536471;
+}
+
+.meta-action-btn:hover,
+.tab-btn:hover {
+  background: #eef7fd;
+  color: #0876bd;
+}
+
+.card h3 {
+  margin-bottom: 14px;
+}
+
+.search-form {
+  gap: 8px;
+}
+
+.search-form input {
+  min-width: 0;
+}
+
+.endpoint-hint {
+  margin-top: 12px;
+  overflow-wrap: anywhere;
+}
+
+.form-stack {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-tweet,
+.btn-small-primary {
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 20px;
+  background: #1d9bf0;
+  color: #fff;
+  font-weight: 700;
+}
+
+.btn-secondary {
+  width: 100%;
+}
+
+.btn-tweet {
+  padding-inline: 20px;
+}
+
+.auth-tabs {
+  display: flex;
+  border-bottom: 1px solid #e1e8ed;
+}
+
+.tab-btn {
+  flex: 1;
+  border-radius: 8px 8px 0 0;
+}
+
+.tab-btn.active {
+  color: #0876bd;
+  box-shadow: inset 0 -2px #1d9bf0;
+}
+
+.auth-alert,
+.error-box {
+  color: #b42318;
+}
+
+.auth-alert.success {
+  color: #137333;
+}
+
+.auth-alert,
+.comment-section {
+  margin-top: 12px;
+}
+
+.comment-input-box {
+  gap: 8px;
+}
+
+.comment-list {
+  margin-top: 10px;
+}
+
+.comment-item {
+  padding: 8px 0;
+  border-top: 1px solid #e1e8ed;
+  overflow-wrap: anywhere;
+}
+
+.active-user-setting {
+  display: grid;
+  gap: 8px;
+}
+
+.cors-modal-overlay {
+  position: fixed;
+  z-index: 2;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: #0008;
+}
+
+.cors-modal-card {
+  width: min(520px, 100%);
+  padding: 22px;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-close {
+  border: 0;
+  background: transparent;
+}
+
+.status-badge.success {
+  color: #137333;
+}
+
+.status-badge.error {
+  color: #b42318;
+}
+
+@media (max-width: 760px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header-container {
+    flex-wrap: wrap;
+    padding: 12px 0;
+  }
+}
